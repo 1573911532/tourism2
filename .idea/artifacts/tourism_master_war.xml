@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="tourism-master:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>tourism-master</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="tourism.war">
+      <element id="artifact" artifact-name="tourism-master:war exploded" />
+    </root>
+  </artifact>
+</component>
