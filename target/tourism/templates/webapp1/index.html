@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>黑马旅游网</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--导入布局js，共享header和footer-->
+    <script type="text/javascript" src="js/include.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+<!--导航栏-->
+<div class="navitem">
+    <ul id="category" class="nav">
+        <!-- <li class="nav-active"><a href="index.html">首页</a></li>
+         <li><a href="route_list.html">门票</a></li>
+         <li><a href="route_list.html">酒店</a></li>
+         <li><a href="route_list.html">香港车票</a></li>
+         <li><a href="route_list.html">出境游</a></li>
+         <li><a href="route_list.html">国内游</a></li>
+         <li><a href="route_list.html">港澳游</a></li>
+         <li><a href="route_list.html">抱团定制</a></li>
+         <li><a href="route_list.html">全球自由行</a></li>
+         <li><a href="favoriterank.html">收藏排行榜</a></li> -->
+        <li>
+            <a href="#">首页</a>
+        </li>
+        <li class="dropdown clearfix sf-menu">
+            <!-- span标签 是添加一个下三角的图标 -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">玩转内蒙<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="阿拉善盟.html">阿拉善盟</a></li>
+                <li><a href="巴彦淖尔.html">巴彦淖尔</a></li>
+                <li><a href="包头.html">包头</a></li>
+                <li><a href="赤峰.html">赤峰</a></li>
+                <li><a href="鄂尔多斯.html">鄂尔多斯</a></li>
+                <li><a href="呼和浩特.html">呼和浩特</a></li>
+                <li><a href="呼伦贝尔.html">呼伦贝尔</a></li>
+                <li><a href="通辽.html">通辽</a></li>
+                <li><a href="乌海.html">乌海</a></li>
+                <li><a href="乌兰察布.html">乌兰察布</a></li>
+                <li><a href="锡林郭勒.html">锡林郭勒</a></li>
+                <li><a href="兴安盟.html">兴安盟</a></li>
+            </ul>
+        </li>
+        <li><a href="#">周边攻略</a></li>
+        <li><a href="国内旅游.html">国内旅游</a></li>
+        <li><a href="国际旅游.html">国外旅游</a></li>
+
+        <li><a href="../../base/index">旅游宝典</a></li>
+
+    </ul>
+</div>
+
+
+<!--导航栏-->
+<ul class="nav nav-pills">
+
+</ul>
+
+
+
+
+	<!--引入头部-->
+    <div id="header"></div>
+    <!-- banner start-->
+    <section id="banner">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox" align="center">
+                <div class="item active">
+                    <img src="images/gt01.jpg" alt=""/>
+                </div>
+                <div class="item">
+                    <img src="images/gt02.jpg" alt=""/>
+                </div>
+                <div class="item">
+                    <img src="images/gt04.jpg" alt=""/>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+            <div>
+
+            </div>
+        </div>
+    </section>
+    <!-- banner end-->
+    <!-- 旅游 start-->
+    <section id="content">
+         <!-- 精选start-->
+        <section class="hemai_jx">
+            <div class="jx_top">
+            <!--字体位置-->
+                <div class="jx_tit" style="text-align:right">
+                    
+                    <span>5A景区</span>
+                </div>
+                <!-- Nav tabs -->
+                <!--<ul class="jx_tabs" role="tablist">-->
+                
+             <!--<li role="presentation" class="active">-->
+                        <span></span>
+             <!--字体右框居左-->
+            <!--<a href="#" aria-controls="popularity" role="tab" data-toggle="tab">5A景区</a>-->
+                    </li>
+                   
+                </ul>
+            </div>
+            <div class="jx_content">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="popularity">
+             <div class="row">
+                  <div class="col-md-3">
+                      <a href="https://www.meet99.com/jingdian-xiangshawan.html">
+                          <img src="images/xsw.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>内蒙古鄂尔多斯响沙湾旅游景区（集观光与休闲度假为一体的特大型综合型的沙漠休闲景区）</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                      </div>
+                <div class="col-md-3">
+                     <a href="https://www.meet99.com/jingdian-chengjisihanling.html">
+                         <img src="images/cjshlg.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>内蒙古鄂尔多斯成吉思汗陵旅游区（是世界上唯一的以成吉思汗文化和蒙古族文化为主题的旅游景区）</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                   </div>
+            <div class="col-md-3">
+                 <a href="https://www.meet99.com/jingdian-hongsemimijiaotongxian.html">
+                       <img src="images/zebjlyq.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>内蒙古自治区满洲里市中俄边境旅游区（素有“东亚之窗”“欧亚大陆桥”之称，在这里可以感受到不同的文化）</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                          </div>
+                             <div class="col-md-3">
+<a href="https://www.meet99.com/jingdian-aershansenlingongyuan-49520.html">
+                             <img src="images/chlyjq.jpg" alt="" />
+                                    <div class="has_border">
+                                        <a href="aes/index.html"><h3>内蒙古自治区阿尔山·柴河旅游景区（与周边城市之间交通便捷，具有整合周边等地旅游资源）</h3></a>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="newest">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_1.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_1.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_1.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_1.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="theme">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_2.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_2.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_2.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="javascript:;">
+                                    <img src="images/jiangxuan_2.jpg" alt="">
+                                    <div class="has_border">
+                                        <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                                        <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 黑马精选end-->
+
+
+
+
+
+        <!-- 国内游 start-->
+        <!--固定框架-->
+        <section class="hemai_jx">
+        
+        <!--黄线-->
+        <div class="jx_top">
+            
+        <!--字体位置-->
+        <div class="jx_tit" style="text-align:right">
+        <!--角标-->
+        <!--<img src="images/icon_6.jpg" alt="">-->
+                 
+         <span>玩转内蒙</span>
+                </div>
+            </div>
+            <div class="heima_gn">
+                <div class="guonei_l">
+                    <img src="images/lift.jpg" alt="">
+                </div>
+                <div class="guone_r">
+         <div class="row">
+            <div class="col-md-4">
+                 <a href="route_detail.html">
+					<img src="images/dqg.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+           <div class="col-md-4">
+                 <a href="route_detail.html">
+						<img src="images/bhyg.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+             <div class="col-md-4">
+                   <a href="route_detail.html">
+						<img src="images/dxg.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+              <div class="col-md-4">
+                    <a href="route_detail.html">
+						<img src="images/eegn.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+      <div class="col-md-4">
+            <a href="route_detail.html">
+				<img src="images/smsslgy.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+         <div class="col-md-4">
+               <a href="route_detail.html">
+					<img src="images/wltl.jpg" alt="">
+								<div class="has_border">
+									<h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        
+        <!-- 国内游 start-->
+        <!--固定框架-->
+        <section class="hemai_jx">
+        
+        <!--黄线-->
+        <div class="jx_top">
+            
+        <!--字体位置-->
+        <div class="jx_tit" style="text-align:right">
+        <!--角标-->
+        <!--<img src="images/icon_6.jpg" alt="">-->
+                 
+         <span>国内畅玩</span>
+                </div>
+            </div>
+            <div class="heima_gn">
+                <div class="guonei_l">
+                    <img src="images/eegnsd.jpg" alt="">
+                </div>
+                <div class="guone_r">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="route_detail.html">
+								<img src="images/wlbtcy.jpg" alt="">
+								<div class="has_border">
+									<h3>乌兰布统草原（风吹草低，牛羊迈着轻快的步子，低头觅食，三五小友最适合来这里聚聚）</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                   <div class="col-md-4">
+                  <a href="route_detail.html">
+					<img src="images/ejnhyllyq.jpg" alt="">
+								<div class="has_border">
+									<h3>额济纳胡杨林旅游区（拥有中国尤为奇妙的勾魂秋色，是赏秋的好去处）</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+          <div class="col-md-4">
+                <a href="route_detail.html">
+					<img src="images/aesgjslgy.jpg" alt="">
+								<div class="has_border">
+									<h3>阿尔山国家森林公园（镶嵌在碧波浩瀚的大兴安岭林海中，其矿泉资源得天独厚，被称为“天下奇泉”)</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+           <div class="col-md-4">
+                  <a href="route_detail.html">
+						<img src="images/bdjlsm.jpg" alt="">
+								<div class="has_border">
+									<h3>巴丹吉林沙漠（是我国第三大沙漠，因受风力作用，沙丘呈现沧海巨浪、巍巍古塔等自然景观）</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+          <div class="col-md-4">
+                 <a href="route_detail.html">
+						<img src="images/hlbedcy.jpg" alt="">
+								<div class="has_border">
+									<h3>呼伦贝尔大草原位（原位于呼伦贝尔市西部，得名于大草原上的呼伦湖与贝尔湖）</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+           <div class="col-md-4">
+                  <a href="route_detail.html">
+						<img src="images/ksktsjdzgy.jpg" alt="">
+								<div class="has_border">
+									<h3>克什克腾世界地质公园（以第四纪冰臼群和花岗岩石林地貌及地质构造为主要特色）</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+    
+        <!-- 国内游 end-->
+        <!-- 境外游 start-->
+        <section class="hemai_jx">
+            <div class="jx_top">
+                <div class="jx_tit" style="text-align:right">
+                    <!--<img src="images/icon_7.jpg" alt="">-->
+                    <span>境外旅游</span>
+                </div>
+            </div>
+            <div class="heima_gn">
+                <div class="guonei_l">
+                    <img src="images/ny.jpg" alt="">
+                </div>
+                <div class="guone_r">
+                <div class="row">
+            <div class="col-md-4">
+                   <a href="route_detail.html">
+						<img src="images/mgdxg.jpg" alt="">
+								<div class="has_border">
+									<h3>美国大峡谷是一个举世闻名的自然奇观，又名科罗拉多大峡谷，是天然遗产之一。</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                        <div class="col-md-4">
+             <a href="route_detail.html">
+					<img src="images/dbj.jpg" alt="">
+								<div class="has_border">
+									<h3>世界上有一个最大最长的珊瑚礁群 ，它就是有名的大堡礁- Great Barrier Reef。</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                        <div class="col-md-4">
+              <a href="route_detail.html">
+					<img src="images/flld.jpg" alt="">
+								<div class="has_border">
+									<h3>佛罗里达风景最亮丽的棕榈海滩是全球著名的旅游天堂之一，适宜的气候 ，美丽的海滩。</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                        <div class="col-md-4">
+               <a href="route_detail.html">
+						<img src="images/xxlnd.jpg" alt="">
+								<div class="has_border">
+									<h3>新西兰位于南太平洋， 海岸线长6900千米， 主要由南岛和北岛组成库克海峡将两岛分开。</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                        <div class="col-md-4">
+              <a href="route_detail.html">
+						<img src="images/hwj.jpg" alt="">
+								<div class="has_border">
+									<h3>非洲尖端好望角，距离开普敦约六十公里， 是大西洋和印度洋的交汇处，景象奇妙。</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                        <div class="col-md-4">
+              <a href="route_detail.html">
+					<img src="images/jm.jpg" alt="">
+								<div class="has_border">
+									<h3>金庙位于印度边境城市阿姆利则 ， 阿姆利则意为“花蜜池塘”，迄今已有400年历史。</h3>
+									<div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>									
+								</div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 境外游 end-->
+        
+        
+        
+<!--黄线-->
+        <div class="jx_top">        
+
+        
+        
+        
+ <div class="cnblogs_Highlighter">
+<div style="text-align:left; margin:0 17px; ling-height:24px;">
+<p style="color:#2a6496; padding:15px;"><i class="fa fa-pencil fa-5x fa-spin"></i></p>
+<p><a target="_blank" href="http://www.cnblogs.com/whfr">内蒙古旅游网</a> - 创建于 2019年11月11日</p>
+
+ 
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h6>Copyright &copy;新浪体育</h6>
+                </div>
+                
+                <div class="col-sm-4">
+                    <h6>关于我们</h6>
+                    <p>
+                        中国上海/2014年8月14日 — 服务于中国及全球华人社群的领先在线媒体公司新浪公司(NASDAQ GS: SINA)今日公布了截至2014年6月30日的第二季度未经审计的财务报告。
+                    </p>
+                </div>
+                
+                <div class="col-sm-2">
+                    <h6>导航</h6>
+                    <ul class="unstyled">
+                        <li><a href="">主页</a></li>
+                        <li><a href="">服务</a></li>
+                        <li><a href="">链接</a></li>
+                        <li><a href="">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-sm-2">
+                    <h6>Follow us</h6>
+                    <ul class="unstyled">
+                        <li><a href="">微博</a></li>
+                        <li><a href="">微信</a></li>
+                        <li><a href="">来往</a></li>
+                    </ul>                    
+                </div>
+                
+                <div class="col-sm-2">
+                    <h6>本网站由<span class="glyphicon glyphicon-heart"></span>内蒙古旅游网制作</h6>
+                </div>
+            </div>
+        </div>
+    </footer><!--页脚结束-->
+
+
+<br /><p> <a target="_blank" href="http://fontawesome.io/">Font Awesome</a> |  
+<a target="_blank" href="https://github.com/aFarkas/html5shiv">Respond.js</a> |  
+<a target="_blank" href="http://www.bootcss.com/">Bootstrap中文网</a> </p> </div>     
+        
+        
+        
+        
+        
+    </section>
+    <!-- 旅游 end-->
+   <!--导入底部-->
+    <div id="footer"></div>
+
+</body>
+</html>
